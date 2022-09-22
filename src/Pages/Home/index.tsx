@@ -1,12 +1,13 @@
 import { productURL } from "../../Api/Api"
 import { useState, useEffect } from "react"
+import { Products } from "../Products"
 
 export const Home = () => {
     const [load, setLoad] = useState(false)
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        loadProducts
+        loadProducts()
     }, [])
 
 
@@ -21,7 +22,10 @@ export const Home = () => {
         <div>
             {load && 'Carregando...'}
             {products.map((item, index) => (
-                
+                <Products
+                key={index}
+                data={item}
+                />
             )
             )}
         </div>
