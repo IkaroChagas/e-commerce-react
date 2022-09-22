@@ -18,8 +18,14 @@ export const Home = () => {
     }
 
     return (
-            
-        )
+        <div>
+            {load && 'Carregando...'}
+            {products.map((item, index) => (
+                
+            )
+            )}
+        </div>
+    )
 }
 
 
