@@ -1,18 +1,18 @@
 import axios from "axios";
 
-export const productURL = () => {
+const base = axios.create({
+  baseURL: 'https://fakestoreapi.com/'
+})
 
-axios.get('https://api.escuelajs.co/api/v1/products')
-  .then(function (response) {
+export const productURL = {
+  getProducts: async () => {
+    let res = await base('/products')
+    return res.data
+  },
 
-    console.log(response);
-  })
-  .catch(function (error) {
+  getProduct: async (id: string) => {
+    let res = await base(`/products${id}`)
+    return res.data
+  }
 
-    console.error(error);
-  })
-  .then(function () {
-
-  });
-  
 }
