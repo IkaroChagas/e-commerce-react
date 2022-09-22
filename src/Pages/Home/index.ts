@@ -3,24 +3,23 @@ import { useState, useEffect } from "react"
 
 export const Home = () => {
     const [load, setLoad] = useState(false)
-    const [product, setProduct] = useState([])
+    const [products, setProducts] = useState([])
 
     useEffect(() => {
-        loadProduct
+        loadProducts
     }, [])
 
 
-    const loadProduct = async () => {
+    const loadProducts = async () => {
         setLoad(true)
         const products = await productURL.getProducts()
-        setProduct(products)
+        setProducts(products)
         setLoad(false)
     }
 
     return (
-        
-    )
-
-
+            
+        )
 }
+
 

@@ -11,7 +11,7 @@ export const productURL = {
   },
 
   getProduct: async (id: string) => {
-    let res = await base(`/products${id}`)
+    let res = await base(`/products/${id}`)
     return res.data
   }
 
