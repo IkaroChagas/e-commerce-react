@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Products = styled.div`
     display: flex;
     background-color: red;
-`;
+`

@@ -1,10 +1,12 @@
 import { productURL } from "../../Api/Api"
 import { useState, useEffect } from "react"
-import { Products } from "../Products"
+import { ProductsDesc  } from "../../types/Products"
+import { SingleProduct } from "../../components/ProductsItens"
+import * as C from './styles'
 
 export const Home = () => {
-    const [load, setLoad] = useState(false)
-    const [products, setProducts] = useState([])
+    const [load, setLoad] = useState<boolean>(false)
+    const [products, setProducts] = useState<ProductsDesc[]>([])
 
     useEffect(() => {
         loadProducts()
@@ -19,16 +21,18 @@ export const Home = () => {
     }
 
     return (
-        <div>
+        <C.Container>
+            <h1>Lista de produtos</h1>
             {load && 'Carregando...'}
             {products.map((item, index) => (
-                <Products
-                key={index}
-                data={item}
-                />
-            )
-            )}
-        </div>
+                <SingleProduct 
+                    key={index}
+                    id={item.id} 
+                    title={item.title}
+                    image={item.image}/>
+            ))}
+
+        </C.Container>
     )
 }
 
