@@ -4,7 +4,7 @@ import { Products } from "../Pages/Products";
 
 export const GeneralRoute = () => {
     return useRoutes ([
-        {path: '/', element: <Home />},
+        {path: '/products', element: <Home />},
         {path: '/products/:id', element: <Products />}
     ])
 }
