@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { productURL } from '../../Api/Api'
 import { ProductsDesc } from '../../types/Products'
+import { Button } from '../Button'
 import * as C from './styles'
 
 export const Products = () => {
@@ -34,7 +35,7 @@ export const Products = () => {
 
     return (
         <C.Products>
-            <C.h1>Lista de produtos</C.h1>
+            
             {load && 'Carregando...'}
             {products.map((item, index) => (
                 <>
@@ -43,7 +44,9 @@ export const Products = () => {
                         <C.Title>{item.title}</C.Title>
                         <C.img src={item.image} />
                         <C.Price>{item.price}</C.Price>
+                        <Button/>
                     </C.List>
+                    
                 </>
             ))}
 

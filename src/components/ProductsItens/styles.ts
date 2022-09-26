@@ -1,47 +1,42 @@
 import styled from "styled-components";
 
 export const Products = styled.div`
-    display: flex;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
+    display: grid;
     width: 100%;
     height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
 `;
 
-export const h1 = styled.h1`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    flex-direction: column;
-`;
 
 export const List = styled.div`
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 60px;
 `;
 
 export const Title = styled.div`
-    font-size: 13px;
+    display: grid;
     font-weight: 800;
+    font-size: 20px;
+    margin: auto;
 `;
 
 export const img = styled.img`
-    display: flex;
-    height: 150px;
-    width: 150px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
 `;
 
 export const Price = styled.div`
-    flex-direction: column;
-    font-size: 12px;
+    display: grid;
+    font-size: 25px;
     color: #000;
     font-weight: 700;
+    margin: auto;
 `;
