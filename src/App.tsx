@@ -1,15 +1,17 @@
 import * as C from './App.Styles'
 import { GeneralRoute } from './Routes/Route'
+import { NavBar } from './components/NavBar';
+import { Products } from './components/ProductsItens';
+import { Footer } from './components/Footer';
 
 function App() {
 
 
   return (
     <C.Container>
-      <C.h1>Loja virtual</C.h1>
-      <hr/>
-     <GeneralRoute />
-
+      <NavBar />
+      <Products />
+      <Footer />
     </C.Container>
 
   );
