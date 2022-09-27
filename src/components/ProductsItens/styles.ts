@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Products = styled.div`
     display: grid;
-    width: 100%;
-    height: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
@@ -15,7 +13,8 @@ export const List = styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    margin: auto;
+    padding: 45px;
 `;
 
 export const Title = styled.div`

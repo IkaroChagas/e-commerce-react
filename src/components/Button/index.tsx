@@ -1,13 +1,18 @@
 import * as C from './styles'
 import { productURL } from '../../Api/Api'
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import { ProductsDesc } from '../../types/Products'
+import { useDispatch } from 'react-redux'
+import { AddCart } from '../../redux/cart'
+
 
 export const Button = () => {
+    const dispatch = useDispatch()
+
     const [cartItem, setCartItem] = useState<ProductsDesc[]>([])
 
 
-    useEffect( () => {
+    useEffect(() => {
         addCart()
     }, [])
 
@@ -15,13 +20,8 @@ export const Button = () => {
         const cart = await productURL.getCart()
         setCartItem(cart)
     }
-    
-
-    const handleAddtoCart = () => {
-        
-    }
 
     return (
-        <C.Button onClick={handleAddtoCart}>Adicionar ao carrinho</C.Button>
+        <C.Button onClick={() => dispatch(AddCart(cartItem))}>Adicionar ao carrinho</C.Button >
     )
 }
