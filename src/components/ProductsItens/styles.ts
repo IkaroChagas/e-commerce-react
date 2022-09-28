@@ -6,6 +6,7 @@ export const Products = styled.div`
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 15px;
+    overflow-x: hidden;
 `;
 
 

@@ -12,7 +12,7 @@ export const Button = () => {
     const params = useParams()
 
     const [cartItem, setCartItem] = useState<ProductsDesc[]>([])
-
+    const [updatecart, setUpdateCart] = useState([])
 
     useEffect(() => {
         if (params.id) {

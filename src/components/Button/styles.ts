@@ -6,7 +6,9 @@ export const Button = styled.button`
     width: 100px;
     margin: auto;
     margin-top: 20px;
-    background-color: red;
-    color: #fff;
+    background-color: #33d4c7;
+    color: #000;
     cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid gray;
 `;
