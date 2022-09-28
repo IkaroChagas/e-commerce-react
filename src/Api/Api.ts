@@ -16,7 +16,7 @@ export const productURL = {
   },
 
   getCart: async () => {
-    let res = await base('/carts/')
+    let res = await base('/carts')
     return res.data
   }
 

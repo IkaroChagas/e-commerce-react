@@ -20,20 +20,17 @@ export const List = styled.div`
 export const Title = styled.div`
     display: grid;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 15px;
     margin: auto;
 `;
 
 export const img = styled.img`
-    display: inline-block;
     height: 200px;
     width: 200px;
-    cursor: pointer;
     padding: 20px;
 `;
 
 export const Price = styled.div`
-    display: grid;
     font-size: 25px;
     color: #000;
     font-weight: 700;
