@@ -15,8 +15,8 @@ export const productURL = {
     return res.data
   },
 
-  getCart: async () => {
-    let res = await base('/carts')
+  getCart: async (id: string) => {
+    let res = await base(`/carts/${id}`)
     return res.data
   }
 
