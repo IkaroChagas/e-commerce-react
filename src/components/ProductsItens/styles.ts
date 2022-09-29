@@ -4,9 +4,8 @@ export const Products = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 10px;
     grid-row-gap: 15px;
-    overflow-x: hidden;
+    margin: 30px;
 `;
 
 
@@ -14,21 +13,20 @@ export const List = styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 45px;
+    margin: 40px;
 `;
 
 export const Title = styled.div`
     display: grid;
     font-weight: 800;
     font-size: 15px;
-    margin: auto;
+    margin:auto;
 `;
 
 export const img = styled.img`
     height: 200px;
     width: 200px;
-    padding: 20px;
+    margin: auto;
 `;
 
 export const Price = styled.div`

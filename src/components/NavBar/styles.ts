@@ -9,5 +9,4 @@ export const NavBar = styled.div`
 `;
 
 export const img = styled.img`
-   
 `;

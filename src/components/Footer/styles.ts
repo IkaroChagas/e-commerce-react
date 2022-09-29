@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    display: grid;
+    width: 100vw;
+    height: 140px;
+    overflow-x: hidden;
+`;
+
 export const p = styled.p`
-    display: flex;
     background-color: black;
     color: #fff;
-    overflow-x: hidden;
-`
+    text-align: center;
+    padding: 20px;
+`;

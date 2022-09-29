@@ -1,10 +1,16 @@
-import React from 'react'
 import * as C from './styles'
 
 export const Footer = () => {
 
     return (
-        <div><C.p>Shop-Dev - 2022</C.p></div>
+        <C.Container>
+            <C.p>Dev-Commerce - 2022
+                <br />
+                <br />
+                Desenvolvido por Íkaro Chagas
+            </C.p>
+
+        </C.Container>
     )
 
 }
