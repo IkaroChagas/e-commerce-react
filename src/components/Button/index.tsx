@@ -26,6 +26,6 @@ export const Button = () => {
     }
 
     return (
-        <C.Button onClick={() => dispatch(AddCart(cartState))}>Adicionar ao carrinho</C.Button >
+        <C.Button onClick={() => dispatch(AddCart)}>Adicionar ao carrinho</C.Button >
     )
 }
