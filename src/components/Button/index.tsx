@@ -18,7 +18,7 @@ export const Button = () => {
         if (params.id) {
             addCart(params.id)
         }
-    }, [cartItem])
+    }, [])
 
     const addCart = async (id: string) => {
         const cart = await productURL.getCart(id)
