@@ -5,7 +5,6 @@ export const Products = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 15px;
-    margin: 30px;
 `;
 
 

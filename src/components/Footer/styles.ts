@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: grid;
     width: 100vw;
-    height: 140px;
-    overflow-x: hidden;
+    height: 130px;
+    background-color: black;
 `;
 
 export const p = styled.p`

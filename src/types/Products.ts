@@ -1,5 +1,5 @@
 export type ProductsDesc = {
-    id: number;
+    id: string;
     title: string;
     image: string;
     price: string;
