@@ -35,18 +35,18 @@ export const Products = () => {
 
     return (
         <C.Products>
-            
+
             {load && 'Carregando...'}
             {products.map((item, index) => (
                 <>
                     {index.toString}
-                    <C.List>
+                    <C.List key={item.id}>
                         <C.Title>{item.title}</C.Title>
                         <C.img src={item.image} />
                         <C.Price>{item.price}</C.Price>
-                        <Button/>
+                        <Button productId={item.id} />
                     </C.List>
-                    
+
                 </>
             ))}
 
