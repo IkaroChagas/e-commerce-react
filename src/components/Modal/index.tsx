@@ -1,13 +1,16 @@
-import {
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-} from 'your-components/Popover';
+import { Popover, PopoverTrigger, PopoverContent } from './styles';
+import { useState } from 'react'
 
-function App() {
+export const Modal = () => {
+    const [cartVisible, setCartVisible] = useState<boolean>(false)
+
+
     return (
         <Popover>
-            <PopoverTrigger>...</PopoverTrigger>
+            <PopoverTrigger>
+                <button onClick={() => setCartVisible(true)} ></button>
+
+            </PopoverTrigger>
             <PopoverContent>...</PopoverContent>
         </Popover>
     );
