@@ -11,10 +11,13 @@ export const NavBar = styled.div`
 export const img = styled.img`
 `;
 
-export const cart = styled.img`
-    display: block;
-    width: 60px;
-    height: 60px;
+export const ButtonCart = styled.div`
+`;
+
+export const button = styled.div`
+    display: flex;
+    width: 30px;
+    height: 30px;
     align-items: center;
     justify-content: center;
     margin-left: 750px;
