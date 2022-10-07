@@ -1,5 +1,6 @@
 import * as C from './styles'
 import devcommerce from '../../images/devcommercelogo.png'
+import { MainModal } from '../Modal'
 
 
 export const NavBar = () => {
@@ -7,6 +8,9 @@ export const NavBar = () => {
     return (
         <C.NavBar>
             <C.img src={devcommerce} />
+            <C.nav>
+                <MainModal />
+            </C.nav>
         </C.NavBar>
     )
 

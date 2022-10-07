@@ -10,7 +10,6 @@ function App() {
   return (
     <C.Container>
       <NavBar />
-      <MainModal />
       <Products />
       <Footer />
     </C.Container>

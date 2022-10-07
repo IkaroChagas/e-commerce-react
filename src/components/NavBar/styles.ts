@@ -11,3 +11,9 @@ export const NavBar = styled.div`
 export const img = styled.img`
 `;
 
+export const nav = styled.nav`
+    height: 40px;
+    width: 45px;
+    margin-left: 55%;
+    margin-top: 80px;
+` 
