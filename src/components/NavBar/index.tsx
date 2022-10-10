@@ -8,9 +8,6 @@ export const NavBar = () => {
     return (
         <C.NavBar>
             <C.img src={devcommerce} />
-            <C.nav>
-                <MainModal />
-            </C.nav>
         </C.NavBar>
     )
 

@@ -4,6 +4,10 @@ import type { RootState } from "../store";
 
 export interface Product {
     id: string;
+    title: string;
+    image: string;
+    price: string;
+    quantity: number;
 }
 
 const initialState: Product[] = []

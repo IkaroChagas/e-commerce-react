@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { productURL } from '../../Api/Api'
-import { ProductsDesc } from '../../types/Products'
+import { Product } from '../../redux/slices/productsSlice'
 import { Button } from '../Button'
 import * as C from './styles'
 
@@ -9,7 +9,7 @@ export const Products = () => {
     const params = useParams()
 
     const [load, setLoad] = useState<boolean>(false)
-    const [products, setProducts] = useState<ProductsDesc[]>([])
+    const [products, setProducts] = useState<Product[]>([])
     const [infoID, setInfoID] = useState({ id: 0, title: '', price: '', image: '' })
 
     useEffect(() => {
