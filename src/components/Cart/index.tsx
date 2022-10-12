@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export const Cart = () => {
 
+
     const [products, setProducts] = useState<Product[]>([])
 
     const {
@@ -32,16 +33,16 @@ export const Cart = () => {
                         return (
                             <tr key={index}>
                                 <td>
-                                    <img alt="" src={item.image} height="80px" />
+                                    <img src={item.image} height="80px" />
                                 </td>
                                 <td>{item.title}</td>
                                 <td>{item.price}</td>
                                 <td>Quantidade ({item.quantity})</td>
                                 <td>
                                     <button
-                                        onClick={() =>
+                                        onClick={() => {
                                             updateItemQuantity(item.id, - 1)
-                                        }>
+                                        }}>
                                         -
                                     </button>
                                     <button
@@ -66,7 +67,7 @@ export const Cart = () => {
 
             </div>
             <h1>Total: {cartTotal}</h1>
-        </div>
+        </div >
 
     );
 }
